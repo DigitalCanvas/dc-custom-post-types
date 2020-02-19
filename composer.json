@@ -1,0 +1,39 @@
+{
+  "name": "digital-canvas/dc-custom-post-types",
+  "description": "Plugin for adding WP custom post types and taxonomies",
+  "type": "wp-plugin",
+  "keywords": [
+    "wordpress",
+    "wp",
+    "plugin",
+    "custom post types",
+    "custom taxonomies"
+  ],
+  "homepage": "https://github.com/digital-canvas/dc-custom-post-types/",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Caspar Green",
+      "email": "cg@caspar.green"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {"DigitalCanvas\\CustomPostTypes\\": "src/"}
+  },
+  "autoload-dev": {
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "vendor-dir": "vendor",
+    "bin-dir": "bin"
+  },
+  "minimum-stability": "dev"
+}
