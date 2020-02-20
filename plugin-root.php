@@ -30,6 +30,7 @@ if (! defined('ABSPATH')) {
 if (canLoad()) {
     require_once(__DIR__ . '/vendor/autoload.php');
     add_action('plugins_loaded', __NAMESPACE__ . '\init', 20);
+    register_deactivation_hook(__FILE__, __NAMESPACE__ . '\deactivate');
 }
 
 /**
@@ -43,8 +44,6 @@ function canLoad(): bool
     return version_compare($GLOBALS['wp_version'], '4.9', '>=')
         && version_compare(phpversion(), '7.4', '>=');
 }
-
-register_deactivation_hook(__FILE__, __NAMESPACE__ . '\deactivate');
 
 /**
  * Initialize.
