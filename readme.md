@@ -3,7 +3,7 @@
 Nearly every WordPress build we do involves registering one or more custom post types
 and taxonomies.
 
-This plugin allows us to just install and set the custom post type and taxonomy essentials
+This plugin allows us to set the custom post type and taxonomy essentials
 in a single config file. Updating the hash entry in the config file signals the plugin to
 update the rewrites when any of those essentials changes during development (or down the
 road when clients ask for further work).
